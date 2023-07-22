@@ -1,0 +1,65 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+    /* footer{
+        @apply bottom-0 fixed w-full bg-slate-500 h-12 z-20 bg-opacity-25 flex justify-center items-center
+    } */
+    h1{
+        @apply text-2xl font-bold
+    }
+    .input{
+        @apply px-2 md:px-4 py-2 text-base outline-none border-b-2 hover:border-indigo-200 focus:border-indigo-500
+    }
+    .require{
+        @apply after:content-['*'] after:ml-0.5 after:text-red-500
+    }
+    .btn{
+        @apply px-4 lg:px-4 py-2 md:py-3 text-sm lg:text-base bg-gray-50 rounded-md transition-all duration-100
+    }
+    .btn-confirm{
+        @apply bg-indigo-500 hover:bg-indigo-600 text-white
+    }
+    .btn-cancel{
+        @apply bg-red-600 hover:bg-red-700 text-white
+    }
+    .btn-success{
+        @apply bg-green-500 hover:bg-green-600 text-white
+    }
+    .btn-disabled{
+        @apply bg-gray-500 hover:bg-gray-600 text-white
+    }
+    .status{
+        @apply p-1.5 text-xs font-medium tracking-wider rounded-lg bg-opacity-50
+    }
+    .status-null{
+        @apply text-gray-800 bg-gray-200
+    }
+    .status-reserve{
+        @apply text-yellow-800 bg-yellow-200
+    }
+    .status-paid{
+        @apply text-green-800 bg-green-200z
+    }
+    .receiptHeader{
+        @apply text-[10px] text-center font-bold whitespace-nowrap
+    }
+    .receiptBody{
+        @apply text-[10px] text-center font-light whitespace-nowrap
+    }
+    .modal{
+        @apply gap-[-15px] fixed top-0 left-0 w-screen h-screen flex items-center justify-center box-border p-[-15px] bg-black bg-opacity-50
+    }
+    .carousel-item{
+        @apply h-[30vh] md:h-[50vh] relative
+    }
+    .carousel {
+        @apply relative w-full
+    }
+    .indicator-active{
+        @apply opacity-100
+    }
+}
