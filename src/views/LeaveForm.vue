@@ -125,7 +125,7 @@ export default {
   },
   mounted(){
     if(!localStorage.getItem('user-info')){
-      this.$router.push({name:'login'});
+      // this.$router.push({name:'login'});
     } else {
       let phone = JSON.parse(localStorage.getItem('user-info'));
       this.phoneNum = phone;

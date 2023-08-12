@@ -820,9 +820,9 @@ export default {
     };
   },
   async mounted() {
-    if (!localStorage.getItem('admin-info')) {
-      this.$router.push({ name: 'admin' })
-    } 
+    // if (!localStorage.getItem('admin-info')) {
+    //   this.$router.push({ name: 'admin' })
+    // } 
     this.getDayInMonth();
     this.adminInfo = JSON.parse(window.localStorage.getItem('admin-info'));
   },

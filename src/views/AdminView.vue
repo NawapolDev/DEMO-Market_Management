@@ -211,9 +211,9 @@ export default {
     }
   },
   async mounted() {
-    if (!localStorage.getItem('admin-info')) {
-      this.$router.push({ name: 'admin' })
-    } 
+    // if (!localStorage.getItem('admin-info')) {
+    //   this.$router.push({ name: 'admin' })
+    // } 
     // this.adminDetail = await this.getData();
     this.progress = true;
     await this.getData();

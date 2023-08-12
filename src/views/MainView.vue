@@ -104,9 +104,9 @@ export default {
     }
   },
   async mounted() {
-    if(!localStorage.getItem('admin-info')){
-      this.$router.push({name:'admin'})
-    }
+    // if(!localStorage.getItem('admin-info')){
+    //   this.$router.push({name:'admin'})
+    // }
     this.progress = true;
     await this.getMarketData();
     await this.getEmployeeData();

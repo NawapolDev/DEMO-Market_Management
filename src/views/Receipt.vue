@@ -257,9 +257,9 @@ export default {
         }
     },
     mounted() {
-        if (!localStorage.getItem('admin-info')) {
-            this.$router.push({ name: 'admin' })
-        }
+        // if (!localStorage.getItem('admin-info')) {
+        //     this.$router.push({ name: 'admin' })
+        // }
         this.getReceiptData();
         this.adminInfo = JSON.parse(window.localStorage.getItem('admin-info'));
     },
